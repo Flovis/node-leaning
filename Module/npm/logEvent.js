@@ -7,7 +7,7 @@ const path = require('path');
 
 const logEvent = async (message) => {
     const dateTime = `${format(new Date(), "yyyyMMdd\tHH:mm:ss")}`;
-    const logTime = `${dateTime}\t${uuid}\t${message}`;
+    const logTime = `${dateTime}\t${uuid}\t${message}\n`;
     console.log(logTime)
 
     try {
